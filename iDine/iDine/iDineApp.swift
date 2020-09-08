@@ -11,7 +11,9 @@ import SwiftUI
 struct iDineApp: App {
     var body: some Scene {
         WindowGroup {
-            AppView().environmentObject(Order())
+            AppView()
+                .environmentObject(Order())
+                .environmentObject(Favorite())
         }
     }
 }

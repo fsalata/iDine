@@ -25,32 +25,38 @@ struct AppView: View {
                             Image(systemName: "square.and.pencil")
                             Text("Order")
                         }
+                    
+                    FavoriteView()
+                        .tabItem {
+                            Image(systemName: "star.fill")
+                            Text("Favorites")
+                        }
                 }
                 
-//                if order.items.count > 0 {
-//                    Badge(count: order.items.count, geometry: geometry)
-//                }
+                if order.items.count > 0 {
+                    Badge(count: order.items.count, geometry: geometry)
+                }
             }
         }
     }
 }
 
-//struct Badge: View {
-//    let count: Int
-//    let geometry: GeometryProxy
-//    
-//    var body: some View {
-//        Text("\(count)")
-//            .font(.caption)
-//            .foregroundColor(.white)
-//            .background (
-//                Circle()
-//                    .fill(Color.red)
-//                    .frame(width: 18, height: 18)
-//            )
-//            .offset(x: (geometry.size.width / 2) + ((geometry.size.width / 2) / 2) + 8, y: -33)
-//    }
-//}
+struct Badge: View {
+    let count: Int
+    let geometry: GeometryProxy
+    
+    var body: some View {
+        Text("\(count)")
+            .font(.caption)
+            .foregroundColor(.white)
+            .background (
+                Circle()
+                    .fill(Color.red)
+                    .frame(width: 18, height: 18)
+            )
+            .offset(x: (geometry.size.width / 2) + 8, y: -33)
+    }
+}
 
 struct AppView_Previews: PreviewProvider {
     static var previews: some View {

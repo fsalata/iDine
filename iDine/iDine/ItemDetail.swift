@@ -9,7 +9,11 @@ import SwiftUI
 
 struct ItemDetail: View {
     @EnvironmentObject var order: Order
+    @EnvironmentObject var favorite: Favorite
+    
     var item: MenuItem
+    
+    @State private var isFavorite = false
     
     var body: some View {
         VStack {
@@ -30,17 +34,34 @@ struct ItemDetail: View {
             
             Button("Order this") {
                 self.order.add(item: self.item)
-            }.font(.headline)
+            }
+            .font(.headline)
+            .padding(10)
+            .padding(.horizontal, 10)
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(10)
             
             Spacer()
-        }.navigationBarTitle(Text(item.name), displayMode: .inline)
+        }
+        .onAppear(perform: {
+            isFavorite = favorite.isFavorite(item: item)
+        })
+        .navigationBarTitle(Text(item.name), displayMode: .inline)
+        .navigationBarItems(trailing:
+                                Button(action: {
+                                    isFavorite.toggle()
+                                    favorite.add(item: item)
+                                }, label: {
+                                    Image(systemName: isFavorite ? "star.fill" : "star")
+                                }))
     }
 }
 
 struct ItemDetail_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-            ItemDetail(item: MenuItem.example).environmentObject(Order())
+            ItemDetail(item: MenuItem.example).environmentObject(Order()).environmentObject(Favorite())
         }
     }
 }

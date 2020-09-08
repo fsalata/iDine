@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0018051B2507F65A00C878CC /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0018051A2507F65A00C878CC /* CheckoutView.swift */; };
+		00DEEE542508116C00A7F347 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DEEE532508116C00A7F347 /* Favorite.swift */; };
+		00DEEE5625081DA000A7F347 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DEEE5525081DA000A7F347 /* FavoriteView.swift */; };
 		00E996692506B71600ECB8AB /* iDineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E996682506B71600ECB8AB /* iDineApp.swift */; };
 		00E9966B2506B71600ECB8AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9966A2506B71600ECB8AB /* ContentView.swift */; };
 		00E9966D2506B71700ECB8AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E9966C2506B71700ECB8AB /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		0018051A2507F65A00C878CC /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		00DEEE532508116C00A7F347 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		00DEEE5525081DA000A7F347 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		00E996652506B71600ECB8AB /* iDine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E996682506B71600ECB8AB /* iDineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDineApp.swift; sourceTree = "<group>"; };
 		00E9966A2506B71600ECB8AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,8 +80,10 @@
 				00E996812506BC4200ECB8AB /* ItemRow.swift */,
 				00E996832506C02D00ECB8AB /* ItemDetail.swift */,
 				00E996852506C4D900ECB8AB /* OrderView.swift */,
-				00E996792506B73100ECB8AB /* Order.swift */,
 				0018051A2507F65A00C878CC /* CheckoutView.swift */,
+				00DEEE5525081DA000A7F347 /* FavoriteView.swift */,
+				00E996792506B73100ECB8AB /* Order.swift */,
+				00DEEE532508116C00A7F347 /* Favorite.swift */,
 				00E996682506B71600ECB8AB /* iDineApp.swift */,
 				00E996802506B74100ECB8AB /* Helpers */,
 				00E9966C2506B71700ECB8AB /* Assets.xcassets */,
@@ -186,8 +192,10 @@
 				00E996862506C4D900ECB8AB /* OrderView.swift in Sources */,
 				0018051B2507F65A00C878CC /* CheckoutView.swift in Sources */,
 				00E996882506C60300ECB8AB /* AppView.swift in Sources */,
+				00DEEE5625081DA000A7F347 /* FavoriteView.swift in Sources */,
 				00E9966B2506B71600ECB8AB /* ContentView.swift in Sources */,
 				00E996692506B71600ECB8AB /* iDineApp.swift in Sources */,
+				00DEEE542508116C00A7F347 /* Favorite.swift in Sources */,
 				00E9967D2506B73100ECB8AB /* Order.swift in Sources */,
 				00E996822506BC4200ECB8AB /* ItemRow.swift in Sources */,
 				00E9967C2506B73100ECB8AB /* Menu.swift in Sources */,
